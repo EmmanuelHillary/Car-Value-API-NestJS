@@ -1,0 +1,24 @@
+### Create Report
+POST http://localhost:3000/reports/create-report
+Content-Type: application/json
+
+{   
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2002,
+    "price": 500000,
+    "mileage": 30000,
+    "longitude": 0,
+    "latitude": 0
+}
+
+### Get Estimate
+GET   http://localhost:3000/reports/get-estimate/?make=Toyota&model=corolla&year=2002&mileage=30000&longitude=0&latitude=0
+
+### Approve Report
+PATCH  http://localhost:3000/reports/approve-report/1
+Content-Type: application/json
+
+{   
+    "approved": true
+}

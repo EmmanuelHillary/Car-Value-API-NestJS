@@ -1,0 +1,52 @@
+### Create User
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{   
+    "username": "Marsh1",
+    "email": "mellow@mail1.com",
+    "password": "dfnvfjdnfdnv"
+}
+
+### Sign In User
+GET  http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email":"Marsh",
+    "password": "dfnvfjdnfdnv"
+}
+
+
+### Sign Out User
+GET http://localhost:3000/auth/signout
+Content-Type: application/json
+
+{
+    "email":"Hood1@mail.com",
+    "password": "dfnvfjdnfdnv"
+}
+
+### Who am i --> url
+GET http://localhost:3000/auth/whoami
+
+### Get User
+GET http://localhost:3000/auth/7
+
+### Filter Users
+GET http://localhost:3000/auth/?email=Joji
+
+### Update User
+PATCH http://localhost:3000/auth/7
+Content-Type: application/json
+
+{
+    "username": "Emmanuel",
+    "email": "gimme@mail.com"
+}
+
+### Delete User
+DELETE http://localhost:3000/auth/6
+
+
+
